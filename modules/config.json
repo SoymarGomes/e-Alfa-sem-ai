@@ -1,0 +1,34 @@
+{
+    "dicionario":{
+        "ativo":true,
+        "dicionario":"dicio",
+        "menu_dicionario":true,
+        "url":"https://api.allorigins.win/get?url="
+    },
+    "voiceSSR":{
+        "config":{
+            "pt-br": { "name": "Português (Brasil)", "voices": ["Marcia", "Ligia", "Yara", "Dinis"] }
+        },
+        "tokens":[
+            "e3f17edd7b9c4d6cb3a333b278aae0e9"
+        ]
+    },
+    "ceumaAI":{
+        "nome_bot":"Eva",
+        "version_bot":"0.0.1",
+        "img_bot":"./assets/bot/eva.jpg",
+        "voz_bot":{
+            "pt-br": { "name": "Português (Brasil)", "voices": "Ligia" }
+        },
+        "contexto":"Planejamento Alimentar",
+        "ativo":true,
+        "https":"https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent",
+        "token":"AIzaSyAQgVCZTsdK41vGpqOLyFD7yGGRZ2EMbo4",
+        "menu_resumo":true
+    },
+    "marcacao":{
+        "menu_marcacao":true,
+        "pesquisa":true
+    }
+    
+}

@@ -1,0 +1,133 @@
+@import url(../../css/variaveis.css);
+
+.objetivo-aprendizagem-elemento{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius: 1rem;
+    color: white;
+}
+
+.objetivo-aprendizagem-elemento img{
+    position: absolute;
+    width: 11%;
+    left:-4%;
+    z-index: 100;
+}
+
+.objetivo-aprendizagem-elemento--box{
+    width: 90%;
+    background-color: #011c41;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius: 1rem;
+    color: white;
+    padding: .5rem;
+}
+
+
+
+.objetivo-aprendizagem-elemento--img-title h1{
+    text-align: center;
+}
+
+.list-group-aprendizagem{
+    font-size: var(--font-para-paragrafos) !important;
+    text-align: left;
+}
+
+.list-group-item-info{
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+}
+
+.list-group-aprendizagem .list-group-item-info p{
+    font-size: var(--font-para-paragrafos) !important;
+    text-align: left;
+    
+}
+
+.list-group-aprendizagem .list-group-item-info::before{
+    content: '';
+    position: relative;
+    left: 0;
+    top: 0;
+    padding: 5px 20px;
+    background-image: url(../../assets/setaSaibaMais.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    
+}
+
+
+
+@media screen and (min-width: 1520px) {
+    .objetivo-aprendizagem-elemento img {
+                width: 12%;
+        left: -4%;
+    }
+
+}
+
+@media screen and (max-width: 1366px) {
+    
+}
+
+@media screen and (max-width: 1200px) {
+    
+}
+
+@media screen and (max-width: 992px) {
+
+    .objetivo-aprendizagem-elemento{
+        width: 90%;
+        height: 100%;
+        display: flex;
+        justify-content:center;
+        flex-direction: column;
+        border-radius: 1rem;
+        color: white;
+    }
+
+    .objetivo-aprendizagem-elemento img{
+        position:relative;
+        left:0;
+        top:0;
+        width: 50%;
+    }
+    
+
+    .objetivo-aprendizagem-elemento--img-title h1{
+        margin-top: 1rem;;
+        font-size: 2rem;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+   
+}
+
+@media screen and (max-width: 600px) {
+   
+}
+
+@media screen and (max-width: 480px) {
+    
+}
+
+@media screen and (max-width: 320px) {
+  
+}
+
+/* Quando Estiver na Resolução 1042 * 389 */
+

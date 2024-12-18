@@ -1,0 +1,179 @@
+/* Modulo do Vlibras */
+
+/* Container do Vlibras */
+
+div[vw] {
+    position: fixed;
+    max-width: 95vw;
+    min-height: 40px;
+    min-width: 40px;
+    right: 6px;
+    top:54%;
+    transform: translateY(-50%);
+    z-index: 2147483647 !important;
+    display: none;
+    margin: 10px !important;
+
+}
+
+
+/* Container do Vlibras */
+
+div[vw].enabled {
+    display: block
+}
+
+div[vw].active {
+    margin-top: -285px
+}
+
+div[vw].left {
+    left: 0;
+    right: initial
+}
+
+[vw] [vw-access-button] {
+    display: none;
+    flex-direction: row-reverse;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    overflow: hidden;
+    position: absolute;
+    border-radius: 8px;
+    transition: all .5s ease;
+    right: 0;
+    left: auto;
+    /* background-color: blue; */
+}
+
+[vw] [vw-access-button] img {
+    
+    max-height: 40px;
+    transition: all .5s ease;
+    border-radius: 8px;
+    opacity: 1 !important;
+    visibility: visible !important;
+
+}
+
+[vw] [vw-access-button] .access-button {
+    width: 40px;
+    height: 40px;
+    z-index: 1
+}
+
+[vw] [vw-access-button] .pop-up {
+    position: absolute;
+    height: 40px;
+    min-width: 150px;
+    z-index: 0;
+    left: 0;
+    right: auto
+}
+
+[vw] [vw-access-button]:hover {
+    width: 200px
+}
+
+[vw] [vw-access-button].isLeft {
+    flex-direction: row;
+    left: 0;
+    right: auto
+}
+
+[vw] [vw-access-button].isLeft .pop-up {
+    left: auto;
+    right: 0
+}
+
+[vw] [vw-access-button].isTopOrBottom:hover {
+    bottom: -20px;
+    top: 0;
+    margin-right: -80px
+}
+
+[vw] [vw-access-button].active {
+    display: flex
+}
+
+/* Container do Vlibras */
+[vw].left [vw-plugin-wrapper] {
+    float: left
+}
+
+[vw] [vw-plugin-wrapper] {
+    position: relative;
+    display: none;
+    width: 300px;
+    height: 100%;
+    float: right;
+    background: white;
+    -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    -moz-border-radius: 12px;
+    -webkit-border-radius: 12px
+}
+
+[vw] [vw-plugin-wrapper].active {
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    height: 430px;
+    max-width: 100%;
+    min-height: 100%
+}
+
+[vp] [vp-settings] .vpw-options-container .vpw-option-content.vpw-option__position {
+    display:none !important;
+}
+
+@media screen and (max-width: 1248px){
+
+    div[vw] {
+              top:58% !important;
+    }
+
+    [vw] [vw-plugin-wrapper].active {
+        height: 335px !important;
+    }
+
+#gameContainer canvas {
+    min-height: calc(0.7* 335px) !important;
+    
+}
+
+[vp] [vp-settings] .vpw-options-container {
+    gap: 6px !important;
+    padding: 10px !important;
+}
+
+[vp] [vp-settings] .vpw-options-container .vpw-option-content p {
+       margin-bottom: 0px !important;
+   
+}
+
+[vp] [vp-settings] .vpw-screen-header span {
+    Display: none !important;
+    
+}
+
+[vp] [vp-settings] .vpw-screen-header {
+        min-height: 34px !important;
+}
+
+[vp] [vp-settings] .vpw-options-container .vpw-option-content .vpw-position-box {
+    width: 111px !important;
+    height: 97px !important;
+    gap: 9px !important;
+    padding: 4px !important;
+    margin-top: 4px !important;
+}
+
+[vp] [vp-settings] .vpw-options-container .vpw-option-content.vpw-option__position {
+    display:none !important;
+}
+}

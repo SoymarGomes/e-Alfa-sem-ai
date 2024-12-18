@@ -1,0 +1,59 @@
+@import url(./variaveis.css);
+
+.container-ferramenta-ouvinte {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-basis: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.container-ferramenta-ouvinte button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 3rem;
+    
+}
+
+.container-ferramenta-ouvinte button i {
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+}
+
+
+
+#button-Dowload-Ouvinte i {
+    font-size: 1.5rem;
+}
+
+
+
+.loader-speech  {
+    width: 19px;
+    aspect-ratio: .75;
+    --c: no-repeat linear-gradient(#ffffff 0 0);
+    background: 
+      var(--c) 0%   50%,
+      var(--c) 50%  50%,
+      var(--c) 100% 50%;
+    animation: l7 1s infinite linear alternate;
+  }
+  @keyframes l7 {
+    0%  {background-size: 20% 50% ,20% 50% ,20% 50% }
+    20% {background-size: 20% 20% ,20% 50% ,20% 50% }
+    40% {background-size: 20% 100%,20% 20% ,20% 50% }
+    60% {background-size: 20% 50% ,20% 100%,20% 20% }
+    80% {background-size: 20% 50% ,20% 50% ,20% 100%}
+    100%{background-size: 20% 50% ,20% 50% ,20% 50% }
+  }

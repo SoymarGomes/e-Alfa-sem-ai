@@ -1,0 +1,9 @@
+User-agent: *
+Disallow: /api/
+Disallow: /pdf/
+Disallow: /modules/
+Disallow: /db/
+
+
+
+

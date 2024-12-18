@@ -1,0 +1,717 @@
+@import url(./variaveis.css);
+
+
+.pagina-tipo-atividade {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    overflow-y: scroll;
+    /* background-color: red; */
+}
+
+/* Chrome, Edge and Safari */
+.pagina-tipo-atividade::-webkit-scrollbar {
+    width: 8px;
+    min-height: min-content;
+    padding-left: 1rem;
+    /* background-color: red; */
+    height: 100%;
+    overflow: auto;
+    display: none;
+}
+
+.pagina-tipo-atividade::-webkit-scrollbar-track {
+    border-radius: 3px;
+    background-color: #00000000;
+}
+
+.pagina-tipo-atividade::-webkit-scrollbar-track:hover {
+    background-color: #00000000;
+}
+
+.pagina-tipo-atividade::-webkit-scrollbar-track:active {
+    background-color: #b8b8c2;
+}
+
+.pagina-tipo-atividade::-webkit-scrollbar-thumb {
+    border-radius: 17px;
+    background-color: var(--cor-geral-fundo-e-componentes);
+}
+
+.pagina-tipo-atividade::-webkit-scrollbar-thumb:hover {
+    background-color: var(--cor-geral-fundo-e-componentes);
+}
+
+.pagina-tipo-atividade::-webkit-scrollbar-thumb:active {
+    background-color: #a3470000;
+}
+
+#h5p-container {
+    width: 100%;
+}
+
+.h5p-container {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+
+.h5p-answers {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    /* Espaçamento entre as colunas */
+}
+
+.h5p-answers ul {
+    flex: 1 1 30%;
+    /* Em telas grandes, cada coluna ocupa cerca de 30% da largura */
+    min-width: 150px;
+    /* Define a largura mínima das colunas */
+    padding: 0;
+    list-style-type: none;
+}
+
+.h5p-answers li {
+    width: 100%;
+    /* Ocupa 100% da largura da coluna */
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+
+.btn-next-atividade {
+    border: none;
+    background: none;
+
+}
+
+.btn-next-atividade:hover {
+    cursor: url('../assets/curso-next.png'), auto;  
+}
+
+ .btn-prev-atividade{
+    border: none;
+    background: none;
+    
+}
+
+.btn-prev-atividade:hover {
+    cursor: url('../assets/curso-prev.png'), auto;  
+}
+
+/* The Modal (background) */
+.modal-atividade {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 9999 !important;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+    padding: 5px;
+    justify-content: center;
+}
+
+.modal-body-atividade {
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    /* background-color: #f63838; */
+}
+
+/* Modal Content */
+.modal-content-atividade {
+    background-color: #fefefe;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    /* background-color: red; */
+
+}
+
+
+
+.modal-body-atividade::-webkit-scrollbar {
+    width: 8px;
+    min-height: min-content;
+    padding-left: 1rem;
+    /* background-color: red; */
+    height: 100%;
+    overflow: auto;
+
+}
+
+
+.modal-body-atividade::-webkit-scrollbar-track:active {
+    background-color: #b8b8c2;
+}
+
+
+.modal-body-atividade::-webkit-scrollbar-thumb {
+    border-radius: 17px;
+    background-color: #a3470000;
+}
+
+
+.modal-body-atividade::-webkit-scrollbar-thumb:hover {
+    background-color: #a3470000;
+}
+
+
+.modal-body-atividade::-webkit-scrollbar-thumb:active {
+    background-color: #a3470000;
+}
+
+.modal-body-atividade::-webkit-scrollbar-track {
+    border-radius: 3px;
+    background-color: #00000000;
+}
+
+
+.modal-body-atividade::-webkit-scrollbar-track:hover {
+    background-color: #00000000;
+}
+
+
+/* The Close Button */
+.close-atividade {
+    color: #e77e7ef3;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    right: 3%;
+    top: 0;
+}
+
+.close-atividade:hover,
+.close-atividade:focus {
+    color: #f63838;
+    text-decoration: none;
+    cursor: url('../assets/curso-point.png'), auto;  
+    
+}
+
+/* The Cotainer (background) */
+.container-content-atividade {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    /* background-color: rgba(0, 0, 0, 0.4); */
+    padding: 5px;
+    justify-content: center;
+}
+
+.container-content-atividade-all {
+    width: 100%;
+    height: 100%;
+    /* background-color: #23C4F8; */
+    display: flex;
+    justify-content: center;
+
+
+}
+
+/* Modal Content */
+.container-body-atividade {
+    background-color: #fefefe;
+    padding: 5px;
+    border: 1px solid #888;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    /* background-color: red; */
+    
+
+}
+
+
+/* The Cotainer (background) */
+
+.loader-atividade {
+    --background: linear-gradient(135deg, #23C4F8, #275EFE);
+    --shadow: rgba(39, 94, 254, 0.28);
+    --text: #6C7486;
+    --page: rgba(255, 255, 255, 0.36);
+    --page-fold: rgba(255, 255, 255, 0.52);
+    --duration: 3s;
+    width: 200px;
+    height: 140px;
+    position: relative;
+}
+
+.loader-atividade:before,
+.loader-atividade:after {
+    --r: -6deg;
+    content: "";
+    position: absolute;
+    bottom: 8px;
+    width: 120px;
+    top: 80%;
+    box-shadow: 0 16px 12px var(--shadow);
+    transform: rotate(var(--r));
+}
+
+.loader-atividade:before {
+    left: 4px;
+}
+
+.loader-atividade:after {
+    --r: 6deg;
+    right: 4px;
+}
+
+.loader-atividade div {
+    width: 100%;
+    height: 100%;
+    border-radius: 13px;
+    position: relative;
+    z-index: 1;
+    perspective: 600px;
+    box-shadow: 0 4px 6px var(--shadow);
+    background-image: var(--background);
+}
+
+.loader-atividade div ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: relative;
+}
+
+.loader-atividade div ul li {
+    --r: 180deg;
+    --o: 0;
+    --c: var(--page);
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    transform-origin: 100% 50%;
+    color: var(--c);
+    opacity: var(--o);
+    transform: rotateY(var(--r));
+    -webkit-animation: var(--duration) ease infinite;
+    animation: var(--duration) ease infinite;
+}
+
+.loader-atividade div ul li:nth-child(2) {
+    --c: var(--page-fold);
+    -webkit-animation-name: page-2;
+    animation-name: page-2;
+}
+
+.loader-atividade div ul li:nth-child(3) {
+    --c: var(--page-fold);
+    -webkit-animation-name: page-3;
+    animation-name: page-3;
+}
+
+.loader-atividade div ul li:nth-child(4) {
+    --c: var(--page-fold);
+    -webkit-animation-name: page-4;
+    animation-name: page-4;
+}
+
+.loader-atividade div ul li:nth-child(5) {
+    --c: var(--page-fold);
+    -webkit-animation-name: page-5;
+    animation-name: page-5;
+}
+
+.loader-atividade div ul li svg {
+    width: 90px;
+    height: 120px;
+    display: block;
+}
+
+.loader-atividade div ul li:first-child {
+    --r: 0deg;
+    --o: 1;
+}
+
+.loader-atividade div ul li:last-child {
+    --o: 1;
+}
+
+.loader-atividade span {
+    display: block;
+    left: 0;
+    right: 0;
+    top: 100%;
+    margin-top: 20px;
+    text-align: center;
+    color: var(--text);
+}
+
+@keyframes page-2 {
+    0% {
+        transform: rotateY(180deg);
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    35%,
+    100% {
+        opacity: 0;
+    }
+
+    50%,
+    100% {
+        transform: rotateY(0deg);
+    }
+}
+
+@keyframes page-3 {
+    15% {
+        transform: rotateY(180deg);
+        opacity: 0;
+    }
+
+    35% {
+        opacity: 1;
+    }
+
+    50%,
+    100% {
+        opacity: 0;
+    }
+
+    65%,
+    100% {
+        transform: rotateY(0deg);
+    }
+}
+
+@keyframes page-4 {
+    30% {
+        transform: rotateY(180deg);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    65%,
+    100% {
+        opacity: 0;
+    }
+
+    80%,
+    100% {
+        transform: rotateY(0deg);
+    }
+}
+
+@keyframes page-5 {
+    45% {
+        transform: rotateY(180deg);
+        opacity: 0;
+    }
+
+    65% {
+        opacity: 1;
+    }
+
+    80%,
+    100% {
+        opacity: 0;
+    }
+
+    95%,
+    100% {
+        transform: rotateY(0deg);
+    }
+}
+
+.continue-application {
+    --color: #fff;
+    --background: #0d6efd;
+    --background-hover: #438dfc;
+    --background-left: #FF8A00;
+    --folder: #F3E9CB;
+    --folder-inner: #BEB393;
+    --paper: #FFFFFF;
+    --paper-lines: #BBC1E1;
+    --paper-behind: #E1E6F9;
+    --pencil-cap: #fff;
+    --pencil-top: #275EFE;
+    --pencil-middle: #fff;
+    --pencil-bottom: #5C86FF;
+    --shadow: rgba(13, 15, 25, .2);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    border-radius: 5px;
+    font-size:  1.5rem;
+    font-weight: 500;
+    line-height: 19px;
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: transparent;
+    padding: 17px 29px 17px 69px;
+    transition: background 0.3s;
+    color: var(--color);
+    background: var(--bg, var(--background));
+    width: auto;
+  }
+  
+  .continue-application > div {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 53px;
+    position: absolute;
+    overflow: hidden;
+    border-radius: 5px 0 0 5px;
+    background: var(--background-left);
+  }
+  
+  .continue-application > div .folder {
+    width: 23px;
+    height: 27px;
+    position: absolute;
+    left: 15px;
+    top: 13px;
+  }
+  
+  .continue-application > div .folder .top {
+    left: 0;
+    top: 0;
+    z-index: 2;
+    position: absolute;
+    transform: translateX(var(--fx, 0));
+    transition: transform 0.4s ease var(--fd, 0.3s);
+  }
+  
+  .continue-application > div .folder .top svg {
+    width: 24px;
+    height: 27px;
+    display: block;
+    fill: var(--folder);
+    transform-origin: 0 50%;
+    transition: transform 0.3s ease var(--fds, 0.45s);
+    transform: perspective(120px) rotateY(var(--fr, 0deg));
+  }
+  
+  .continue-application > div .folder:before, .continue-application > div .folder:after,
+  .continue-application > div .folder .paper {
+    content: "";
+    position: absolute;
+    left: var(--l, 0);
+    top: var(--t, 0);
+    width: var(--w, 100%);
+    height: var(--h, 100%);
+    border-radius: 1px;
+    background: var(--b, var(--folder-inner));
+  }
+  
+  .continue-application > div .folder:before {
+    box-shadow: 0 1.5px 3px var(--shadow), 0 2.5px 5px var(--shadow), 0 3.5px 7px var(--shadow);
+    transform: translateX(var(--fx, 0));
+    transition: transform 0.4s ease var(--fd, 0.3s);
+  }
+  
+  .continue-application > div .folder:after,
+  .continue-application > div .folder .paper {
+    --l: 1px;
+    --t: 1px;
+    --w: 21px;
+    --h: 25px;
+    --b: var(--paper-behind);
+  }
+  
+  .continue-application > div .folder:after {
+    transform: translate(var(--pbx, 0), var(--pby, 0));
+    transition: transform 0.4s ease var(--pbd, 0s);
+  }
+  
+  .continue-application > div .folder .paper {
+    z-index: 1;
+    --b: var(--paper);
+  }
+  
+  .continue-application > div .folder .paper:before, .continue-application > div .folder .paper:after {
+    content: "";
+    width: var(--wp, 14px);
+    height: 2px;
+    border-radius: 1px;
+    transform: scaleY(0.5);
+    left: 3px;
+    top: var(--tp, 3px);
+    position: absolute;
+    background: var(--paper-lines);
+    box-shadow: 0 12px 0 0 var(--paper-lines), 0 24px 0 0 var(--paper-lines);
+  }
+  
+  .continue-application > div .folder .paper:after {
+    --tp: 6px;
+    --wp: 10px;
+  }
+  
+  .continue-application > div .pencil {
+    height: 2px;
+    width: 3px;
+    border-radius: 1px 1px 0 0;
+    top: 8px;
+    left: 105%;
+    position: absolute;
+    z-index: 3;
+    transform-origin: 50% 19px;
+    background: var(--pencil-cap);
+    transform: translateX(var(--pex, 0)) rotate(35deg);
+    transition: transform 0.4s ease var(--pbd, 0s);
+  }
+  
+  .continue-application > div .pencil:before, .continue-application > div .pencil:after {
+    content: "";
+    position: absolute;
+    display: block;
+    background: var(--b, linear-gradient(var(--pencil-top) 55%, var(--pencil-middle) 55.1%, var(--pencil-middle) 60%, var(--pencil-bottom) 60.1%));
+    width: var(--w, 5px);
+    height: var(--h, 20px);
+    border-radius: var(--br, 2px 2px 0 0);
+    top: var(--t, 2px);
+    left: var(--l, -1px);
+  }
+  
+  .continue-application > div .pencil:before {
+    -webkit-clip-path: polygon(0 5%, 5px 5%, 5px 17px, 50% 20px, 0 17px);
+    clip-path: polygon(0 5%, 5px 5%, 5px 17px, 50% 20px, 0 17px);
+  }
+  
+  .continue-application > div .pencil:after {
+    --b: none;
+    --w: 3px;
+    --h: 6px;
+    --br: 0 2px 1px 0;
+    --t: 3px;
+    --l: 3px;
+    border-top: 1px solid var(--pencil-top);
+    border-right: 1px solid var(--pencil-top);
+  }
+  
+  .continue-application:before, .continue-application:after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 2px;
+    border-radius: 1px;
+    background: var(--color);
+    transform-origin: 9px 1px;
+    transform: translateX(var(--cx, 0)) scale(0.5) rotate(var(--r, -45deg));
+    top: 26px;
+    right: 16px;
+    transition: transform 0.3s;
+  }
+  
+  .continue-application:after {
+    --r: 45deg;
+  }
+  
+  .continue-application:hover {
+    --cx: 2px;
+    --bg: var(--background-hover);
+    --fx: -40px;
+    --fr: -60deg;
+    --fd: .15s;
+    --fds: 0s;
+    --pbx: 3px;
+    --pby: -3px;
+    --pbd: .15s;
+    --pex: -24px;
+  }
+  
+
+
+
+@media screen and (max-width: 1366px) {
+    .pagina-tipo-atividade {
+
+        justify-content: center;
+
+    }
+
+
+}
+
+@media screen and (max-width: 1200px) {}
+
+@media screen and (max-width: 992px) {}
+
+@media screen and (max-width: 768px) {
+
+    .modal-body-atividade {
+
+        /* background-color: #f63838; */
+        overflow-y: scroll;
+    }
+
+    .pagina-tipo-atividade {
+
+        /* justify-content: start; */
+
+    }
+
+    .pagina-tipo-atividade::-webkit-scrollbar {
+        display: block;
+    }
+
+    .h5p-answers ul {
+        flex: 1 1 100%;
+    }
+
+}
+
+@media screen and (max-width: 600px) {}
+
+@media screen and (max-width: 480px) {}
+
+@media screen and (max-width: 320px) {}
+
+/* CSS para animações */
+.animation-fade-out {
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+}
+
+.animation-fade-in {
+    opacity: 1;
+    transition: opacity 0.5s ease-in;
+}

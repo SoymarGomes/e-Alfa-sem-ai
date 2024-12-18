@@ -1,0 +1,10 @@
+[
+    {   "tipo":"pdf",
+        "opt":{
+            "ativo":false,
+            "senha":""
+        },
+        "ativo":true,
+        "arquivo":"./pdf/unidade_2.pdf"
+    }
+]

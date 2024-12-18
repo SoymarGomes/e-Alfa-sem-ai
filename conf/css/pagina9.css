@@ -1,0 +1,18 @@
+@import url(../../css/variaveis.css);
+
+.pagina-historia-alimentacao-container-titulo-intro{
+    display: flex;
+    /* background-color: red; */
+    flex-direction: column;
+   
+}
+
+.pagina-historia-alimentacao-container-titulo-intro h1{
+    font-size: 1.5rem;
+    text-align: left;
+    color: #011c41;
+}
+
+table{
+    font-size: 1rem;
+}

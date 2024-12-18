@@ -1,0 +1,43 @@
+@import url(../../css/variaveis.css);
+
+.container-imagems-comidas{
+    max-width: 760px;
+}
+/* Estilização do container Flexbox */
+.flex-layout {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha */
+    justify-content: space-between; /* Distribui o espaço entre os itens */
+}
+
+/* Estilização das imagens individuais */
+.flex-item {
+    flex: 1 1 calc(33.333% - 0.5rem); /* 3 itens por linha com espaçamento */
+}
+
+/* Responsividade para tablets (2 colunas) */
+@media (max-width: 768px) {
+    .flex-item {
+        flex: 1 1 calc(50% - 0.5rem); /* 2 itens por linha em telas menores */
+    }
+}
+
+/* Responsividade para dispositivos móveis (1 coluna) */
+@media (max-width: 576px) {
+    .flex-item {
+        flex: 1 1 100%; /* 1 item por linha em telas pequenas */
+    }
+}
+
+/* Estilização das imagens */
+.flex-item img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+   
+}
+
+/* Efeito de zoom ao passar o mouse */
+.flex-item img:hover {
+    transform: scale(1.05);
+}

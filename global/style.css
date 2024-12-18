@@ -1,0 +1,252 @@
+@import url(../css/texto.css);
+/* @import url(../css/tooltip.css); */
+
+@import url(../css/menu_footer.css);
+@import url(../css/menu_sidebar.css);
+@import url(../css/annotation.css);
+@import url(../css/capa.css);
+@import url(../css/ouvinte.css);
+@import url(../css/spinner.css);
+@import url(../css/tools.css);
+@import url(../css/dicionario.css);
+@import url(../css/toolbar.css);
+@import url(../css/resumo.css);
+@import url(../css/marcacao.css);
+@import url(../css/siderbar.css);
+@import url(../css/ligthbox.css);
+@import url(../css/siderbar.css);
+@import url(../css/carrosel.css);
+@import url(../css/video.css);
+@import url(../css/audio.css);
+@import url(../css/atividade.css);
+@import url(../css/vlibras.css);
+@import url(../css/variaveis.css);
+
+
+/* ------ Animações ------ */
+@import url(../plugins/vizionnAnimation/attention.css);
+@import url(../plugins/vizionnAnimation/bounce.css);
+@import url(../plugins/vizionnAnimation/fade.css);
+@import url(../plugins/vizionnAnimation/flip.css);
+@import url(../plugins/vizionnAnimation/rotate.css);
+@import url(../plugins/vizionnAnimation/slide.css);
+@import url(../plugins/vizionnAnimation/zoom.css);
+/* ------ Animações ------ */
+
+
+
+:root {
+    --bg-tooltip: rgb(255, 255, 255);
+    --cor-tooltip: black;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box !important;
+    font-family: var(--familia-da-font-paragrafo);
+
+}
+
+/* 
+html{
+    zoom: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+
+body {
+    width: 100vw !important;
+    height: 100vh !important;
+    position: relative;
+    /* background-color: rgb(24, 86, 141); */
+    /* overflow: hidden; */
+
+}
+
+img {
+    user-select: none;
+    -webkit-user-drag: none;
+    -moz-window-dragging: none;
+}
+
+
+.tippy-box[data-theme~='light'] {
+    background-color: var(--bg-tooltip);
+    color: var(--cor-tooltip);
+    font-size: 0.9rem;
+}
+
+.tippy-box[data-theme~='laranjado'] {
+    background-color: #FF8A00;
+    color: black;
+    font-size: 0.9rem;
+}
+
+.tippy-arrow {
+   color: #FF8A00;
+}
+
+
+
+/* Controladores de Descrição para Imagens */
+
+p.description-descricao{
+    width:100%;
+    padding: 0.2rem;
+    font-size:13px !important;
+    color: rgb(255, 255, 255) !important;
+    text-align: left !important ;
+    background-color:rgba(24, 24, 24, 0.546);
+}
+
+.description-font{
+    width:100%;
+    padding: 0.2rem ;
+    font-size:0.7rem !important;
+    color: white !important ;
+    text-align: center;
+    background-color:rgba(24, 24, 24, 0.546);
+    font-style: normal;
+    font-weight: none;
+    font-family: var(--familia-da-font-paragrafo);
+
+}
+
+#textoprancheta{
+top: 14%;
+position: absolute;
+width: 78%;
+}
+
+#pprancheta {
+    text-align: center !important;
+    display: flex;
+    margin-top: .25rem;
+    flex-direction: column;
+    font-size: .8rem !important;
+    font-weight: 600;
+    color: #011c41 !important;
+}
+
+#prancheta {
+    width: 309px;
+    height: 300px;
+    max-width: 150%;
+}
+
+#important-saber{
+    position: absolute;
+    width: 32%;
+    left: -15%;
+    z-index: 100;
+}
+
+.important-saber-elemento--box {
+    width: 90%;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(33,33,110,1) 35%, rgba(0,136,163,1) 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius: 1rem;
+    color: white !important;
+    padding: 1rem 1rem 1rem 5rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+#para-pensar{
+    position: absolute;
+    width: 23%;
+    left: -9%;
+    /* top: -19%; */
+    z-index: 100;
+}
+
+.para-pensar-elemento--box {
+    font-weight: 600;
+    width: 95%;
+    background: #fef1ea;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius: 1rem;
+    color:#011C41 !important;
+    padding: 1rem 1rem 1rem 5rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+pdestaque {
+    padding: .5rem;
+    border-radius: 10px;
+    border: 4px solid #ff8a00;
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+    display: flex;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #011c41;
+}
+
+/*Flip card CSS*/
+
+.flip-card {
+    perspective: 1000px;
+    width: 370px;
+    height: 440px;
+    margin: 20px;
+    display: inline-block;
+  }
+
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+  }
+
+  /* .flipped{
+    width: 100%;
+    height: 100%;
+
+  } */
+
+  .flip-card.flipped .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  }
+
+  .flip-card-front {
+    background: var(--bg-card-flip-front);
+    color: white;
+  }
+
+  .flip-card-back {
+    background: var(--bg-card-flip-back);
+    color: white;
+    transform: rotateY(180deg);
+  }

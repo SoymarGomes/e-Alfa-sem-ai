@@ -1,0 +1,195 @@
+@import url(./variaveis.css);
+
+.carrosel--container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background: var(--fundo-carrosel);
+    background-image: var(--imgem-fundo-carrosel);
+    background-repeat: no-repeat;
+    background-position: var(--imgem-fundo-carrosel-posicao-x-imagem) var(--imgem-fundo-carrosel-posicao-y-imagem);
+    background-size: var(--imgem-fundo-tamanho-x-y-imagem);
+}
+
+.c-carousel__slides {
+    display: flex;
+    overflow: hidden;
+    /* border-radius: 10px; */
+    width: 100%;
+    /* background: red; */
+    height: auto;
+
+}
+
+.c-carousel__slide {
+    display: flex;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    justify-content: center;
+    /* background-color: #f8f9fa; */
+    text-align: center;
+    font-size: 1.5rem;
+    /*border: 1px solid #ddd;*/
+    display: flex;
+    justify-content: center;
+    background: var(--fundo-carrosel);
+    align-items: center;
+    /* background-image: var(--imagem-de-fundo-slider);
+    background-repeat: no-repeat;
+    background-size:var(--tamanho-x-y-imagem);
+    background-position:  var(--posicao-y-imagem) var(--posicao-x-imagem); */
+    margin: 0.5rem;
+    /* background-color: blueviolet; */
+}
+
+.glider-prev,
+.glider-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #007bff; */
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.glider-prev {
+    left: 10px;
+}
+
+.glider-next {
+    right: 10px;
+}
+
+.glider-next>i {
+    width: var(--largura-seta);
+    height: var(--altura-seta);
+    border-radius: 50rem;
+    font-size: var(--tamanho-de-fonte-seta);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cor-de-fundo-seta);
+    color: var(--cor-das-setas);
+}
+
+.glider-prev>i {
+    width: var(--largura-seta);
+    height: var(--altura-seta);
+    font-size: var(--tamanho-de-fonte-seta);
+    border-radius: 50rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cor-de-fundo-seta);
+    color: var(--cor-das-setas);
+}
+
+.container-dots {
+    position: absolute;
+    /* width: 14.7rem; */
+    width: 100%;
+    overflow: hidden;
+    overflow-x: scroll;
+    bottom: 1%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    /* background-color: var(--fundo-carrosel); */
+    /* background-color: rgb(0, 68, 255); */
+    /* background: var(--fundo-carrosel); */
+    border: none;
+    color: rgb(27, 27, 27);
+    gap: 0.5rem;
+    cursor: pointer;
+    z-index: 1;
+    /* height: 4rem; */
+    margin: 0 auto;
+    padding: 0.5rem 1rem;
+    /* border-radius: 100rem; */
+}
+
+.container-dots::-webkit-scrollbar {
+    width: 4px;
+    min-height: min-content;
+    /* background-color: red; */
+    height: 100%;
+    display: none;
+}
+
+#dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: var(--fundo-carrosel); */
+    /* background-color: rebeccapurple; */
+    /* background: var(--fundo-carrosel); */
+    border: none;
+    color: rgb(27, 27, 27);
+    gap: 0.5rem;
+    cursor: pointer;
+    z-index: 1;
+    width: 100%;
+    /* height: 4rem; */
+    flex-wrap: wrap;
+    font-size:0.5rem;
+
+
+
+}
+
+#dots button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.marca-da-agua {
+    position: absolute;
+    bottom: 0%;
+    background-color: rgba(255, 255, 255, 0);
+    padding: 1.8rem;
+    /* background: var(--fundo-carrosel); */
+    background-image: var(--imagem-de-fundo-slider);
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: calc(var(--tamanho-x-y-imagem) * 5);
+    background-position: var(--posicao-y-imagem) var(--posicao-x-imagem);
+    margin: 0.4rem;
+    z-index: 1;
+    width: 10rem;
+
+}
+
+
+@media screen and (max-width: 1366px) {}
+
+@media screen and (max-width: 1200px) {}
+
+@media screen and (max-width: 992px) {}
+
+@media screen and (max-width: 768px) {
+    .container-dots {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px){}
+
+@media screen and (max-width: 480px) {}
+
+@media screen and (max-width: 320px){}
+
+/* Quando Estiver na Resolução 1042 * 389 */

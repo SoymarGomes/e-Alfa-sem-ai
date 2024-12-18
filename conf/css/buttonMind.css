@@ -1,0 +1,70 @@
+  .containerMind {
+    display: flex;
+    align-items: center;
+  }
+
+  .buttonMind {
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed #f39200;
+    cursor: pointer;
+    margin: 10px;
+    position: relative;
+    font-size: 2rem;
+    z-index: 1;
+    background-color: #011c41; /* Cor padrão para o botão */
+    transition: all 0.3s ease;
+  }
+
+  .buttonMind:hover,
+  .buttonMind.expanded {
+    background-color: #f39200;
+    color: #011c41;
+    transform: scale(1.1);
+  }
+
+  .contentMind {
+    width: 100%;
+    font-size: 1rem;
+    color: #fff;
+    border-radius: 10px;
+    display: none;
+    white-space: normal;
+    background: #fff;
+    /* border: 2px solid #000; */
+    padding: 20px;
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #011c41; /* Cor de fundo para o conteúdo expandido */
+    z-index: 200;
+  }
+
+  .contentMind .closeMind {
+    position: absolute;
+    top: 0px;
+    right: 7px;
+    cursor: pointer;
+  }
+
+  .buttonMind.expandedMind + .contentMind {
+    display: inline-block;
+  }
+
+  @media screen and (min-width: 1520px) {
+    .contentMind {
+        font-size: 1.8rem;
+    
+        }
+
+        .contentMind .closeMind {
+            top: -5px;
+        }
+    
+  }

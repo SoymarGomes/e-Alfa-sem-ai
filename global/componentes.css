@@ -1,0 +1,776 @@
+@import url(../css/variaveis.css);
+
+/* ;;;;;; COMPONENTE PARA DEIXAR O TESTO EM DESTAQUE E ITALICO */
+
+.componente-destaque {
+    /* background-color: red; */
+}
+
+.componente-destaque h1 {
+    text-align: left !important;
+}
+
+.destaque-italico {
+    font-style: italic;
+    color: #1b4b9d !important;
+    text-align: justify;
+    font-weight: 600;
+    width: 100%;
+}
+
+.componente-destaque p {
+    font-style: italic;
+    color: #1b4b9d !important;
+    text-align: justify;
+    font-weight: 600;
+}
+
+
+.text-branco {
+    color: white !important;
+}
+
+/* ;;;;;; COMPONENTE PARA DEIXAR O TESTO EM DESTAQUE E ITALICO */
+
+/* Componentes para o SaibaMais */
+
+.container-saibamais {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.accordion-saibamais {
+    border-radius: 10px;
+    width: 90%;
+    background: #f88209;
+    color: #444;
+    cursor: pointer;
+    padding: 0.5rem;
+    border: none;
+    text-align: left;
+    outline: none;
+    transition: 0.4s;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: bold;
+    color: white !important;
+}
+
+
+.active,
+.accordion-saibamais:hover {
+    background-color: #011c41;
+}
+
+.panel-saibamais {
+    width: 90%;
+    margin-bottom: 5px;
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    /* background-color: red; */
+}
+
+.video-container {
+    width: 100%;
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 50%;
+    border-radius: 0.3rem;
+}
+
+
+.panel-saibamais {
+    display: none;
+    /* Painéis começam ocultos */
+    overflow: hidden;
+}
+
+.panel-saibamais p {
+    text-align: justify !important;
+    hyphens: auto;
+}
+
+.panel-saibamais.active-panel {
+    display: flex;
+    /* Exibe o painel quando ativo */
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+
+.panel-saibamais img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+
+.saibamais-container {
+    /* width: 100%; */
+    height: 100%;
+    border-radius: 0.3rem;
+}
+
+.saibamais-container a {
+    font-size: 1rem !important;
+}
+
+.accordion-saibamais i {
+    margin-left: auto;
+    transition: transform 0.3s ease;
+}
+
+.accordion-saibamais.active i {
+    transform: rotate(180deg);
+}
+
+/* Componentes para o SaibaMais */
+
+.info-box {
+    background-color: var(--card-color);
+    /* Cor personalizada */
+    color: #fff;
+    /* Texto branco */
+    border-radius: 10px;
+    padding: 0.2rem 0.5rem;
+    margin: 0.2rem;
+    transition: all 0.3s ease-in-out;
+    /* Transição suave para efeitos */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Sombra inicial */
+
+}
+
+.info-box h5 {
+    font-weight: bold;
+}
+
+.info-box p {
+    color: white !important;
+    font-size: 0.8rem !important;
+}
+
+/* Efeito de hover (quando o mouse passa por cima) */
+.info-box:hover {
+    background-color: #0056b3;
+    /* Alteração na cor de fundo ao passar o mouse */
+    transform: scale(1.05);
+    /* Aumenta levemente o tamanho da caixa */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    /* Sombra mais forte ao passar o mouse */
+}
+
+
+.equal-height {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    /* Faz todos os blocos terem a mesma altura */
+
+}
+
+
+
+/* Componentes de referencias Bibliograficas  */
+
+.lista-referencias-bibliograficas {
+    /* background-color: red; */
+    font-size: var(--font-para-paragrafos);
+    text-align: left;
+}
+
+
+.bt-1 {
+    background: #011c41;
+    color: #fff;
+    display: inline-block;
+    transition: all .4s ease-in-out;
+    transform-style: preserve-3d;
+    animation-name: zoom;
+    animation-duration: 3s;
+
+}
+
+.bt-1:hover {
+    background: #024db3;
+    transform: rotate3d(1, 0, 0, -360deg);
+}
+
+@keyframes zoom {
+    0% {
+        transform: scale(0);
+    }
+}
+
+@keyframes zoom {
+    100% {
+        transform: scale(1)
+    }
+}
+
+.bt-2 {
+    background: red;
+    color: #fff;
+    display: inline-block;
+    transition: all .4s ease-in-out;
+    transform-style: preserve-3d;
+    animation-name: zoom;
+    animation-duration: 3s;
+}
+
+.bt-2:hover {
+    background: #024db3;
+    transform: rotate3d(1, 0, 0, -360deg);
+}
+
+@keyframes zoom {
+    0% {
+
+        transform: scale(0);
+    }
+}
+
+@keyframes zoom {
+    100% {
+
+        transform: scale(1);
+    }
+}
+
+.bt-3 {
+    background: #FF8A00;
+    color: #fff;
+    display: inline-block;
+    transition: all .4s ease-in-out;
+    transform-style: preserve-3d;
+    animation-name: zoom;
+    animation-duration: 3s;
+}
+
+.bt-3:hover {
+    background: #024db3;
+    transform: rotate3d(1, 0, 0, -360deg);
+}
+
+
+@keyframes zoom {
+    0% {
+        transform: scale(0);
+    }
+
+}
+
+@keyframes zoom {
+
+    100% {
+
+        transform: scale(1);
+    }
+}
+
+.my-poup {
+
+    background: #FF8A00;
+}
+
+.custom-box-red {
+    background-color: #dc3545;
+    /* Cor vermelha */
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Sombra suave */
+    margin-top: 10px;
+}
+
+.custom-box-red p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+
+.pagina-historia-alimentacao-container-titulo-intro {
+    display: flex;
+    /* background-color: red; */
+    flex-direction: column;
+
+}
+
+.pagina-historia-alimentacao-container-titulo-intro h1 {
+    font-size: 1.5rem;
+    text-align: left;
+    color: #011c41;
+}
+
+table {
+    font-size: 1rem;
+}
+
+
+ol {
+    text-align: left;
+    font-size: 0.9rem !important;
+}
+
+.list-group-numbered {
+    counter-reset: section var(--list-start, 0) !important;
+}
+
+/* From Uiverse.io by Creatlydev */
+.buttonExplorar {
+    line-height: 1;
+    text-decoration: none;
+    display: inline-flex;
+    border: none;
+    cursor: pointer;
+    align-items: center;
+    width: 100%;
+    gap: 0.75rem;
+    background-color: var(--clr);
+    color: #fff;
+    border-radius: 10rem;
+    font-weight: 600;
+    padding: 0.75rem 1.5rem;
+    padding-left: 20px;
+    white-space: nowrap;
+    /* overflow: hidden; */
+    text-overflow: ellipsis;
+    transition: background-color 0.3s;
+}
+
+.buttonExplorar__icon-wrapper {
+    flex-shrink: 0;
+    width: 25px;
+    height: 25px;
+    position: relative;
+    color: var(--clr);
+    background-color: #fff;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+
+.buttonExplorar:hover {
+    background-color: #000;
+}
+
+.buttonExplorar:hover .buttonExplorar__icon-wrapper {
+    color: #000;
+}
+
+.buttonExplorar__icon-svg--copy {
+    position: absolute;
+    transform: translate(-150%, 150%);
+}
+
+.buttonExplorar:hover .buttonExplorar__icon-svg:first-child {
+    transition: transform 0.3s ease-in-out;
+    transform: translate(150%, -150%);
+}
+
+.buttonExplorar:hover .buttonExplorar__icon-svg--copy {
+    transition: transform 0.3s ease-in-out 0.1s;
+    transform: translate(0);
+}
+
+
+.cards-icons {
+    width: 100%;
+    height: fit-content;
+    /* background-color: rgb(238, 238, 238); */
+    display: flex;
+    flex-direction: column;
+    padding: 25px 25px;
+    gap: 20px;
+    /* box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055); */
+}
+
+/* for all social containers*/
+.socialContainer {
+    width: 100%;
+    height: 52px;
+    background-color: var(--card-color-icons);
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    transition-duration: .3s;
+    border-radius: 0.2rem;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-align: left;
+}
+
+/* Whatsapp*/
+.socialContainer:hover {
+    background-color: #00000071;
+    transition-duration: .3s;
+}
+
+.socialContainer:active {
+    transform: scale(0.9);
+    transition-duration: .3s;
+}
+
+.socialSvg {
+    width: 100px;
+}
+
+.socialSvg path {
+    fill: rgb(255, 255, 255);
+}
+
+.socialContainer:hover .socialSvg {
+    animation: slide-in-top 0.3s both;
+}
+
+.container-text-icons-socialContainer {
+
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+    border: 5px solid var(--border-color);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+
+}
+
+.container-text-icons-socialContainer > div {
+
+    height: 250px;
+    overflow: hidden;
+ 
+ }
+
+.container-text-icons-socialContainer img {
+    width:50%;
+}
+
+.message-box {
+    width: 100%;
+    border-radius: 6px;
+    margin: 20px auto;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.message-box--divisor {
+    display: flex;
+    align-items: center;
+}
+
+.message-box i {
+    vertical-align: middle;
+    padding: 8px;
+}
+
+.message-box i.exit-button {
+    float: right;
+    opacity: 0.4;
+}
+
+.message-box i.exit-button:hover {
+    opacity: 0.8;
+}
+
+.message-text {
+    text-align: left;
+}
+
+.message-box-info {
+    background-color: #CDE8F6;
+    border: #2697d1 2px solid;
+    color: #447EAF;
+}
+
+.message-box-warn {
+    background-color: #F8F4D5;
+    border: #e9dd7e 2px solid;
+    color: #96722E;
+}
+
+.message-box-error {
+    background-color: #ECC8C5;
+    border: #d37f78 2px solid;
+    color: #B83C37;
+}
+
+.message-box-success {
+    background-color: #DDF3D5;
+    border: #9ddc86 2px solid;
+    color: #597151;
+}
+
+.info-item {
+    background-color: #cce5ff;
+    color: #004085;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.4s;
+}
+
+.info-item:hover {
+    transform: scale(1.1);
+}
+
+button.eva_button____lista {
+    padding: 0.7rem !important;
+}
+
+
+.container-step {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    justify-content: space-between;
+    align-items: stretch;
+    /* Garante que todos os passos tenham a mesma altura */
+    width: 100%;
+    /* background: #000; */
+
+}
+
+.step {
+    flex: 1;
+    margin-right: 10px;
+    background: var(--color-card-step);
+    color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    position: relative;
+    clip-path: polygon(0 0, calc(100% - 20px) 0, 100% 50%, calc(100% - 20px) 100%, 0 100%);
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* Distribui o conteúdo igualmente */
+}
+
+
+.step h3 {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.step p {
+    font-size: 1em;
+    margin: 0;
+}
+
+
+.vision-info-box {
+    background: rgb(15, 64, 122);
+    background: linear-gradient(90deg, rgba(15, 64, 122, 1) 42%, rgba(37, 137, 255, 1) 100%);
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+
+}
+
+.vision-info-box h3 {
+    color: white !important;
+    font-weight: 800 !important;
+    font-style: italic;
+}
+
+.vision-info-box p {
+    color: white !important;
+}
+
+
+.vision-info-box .icon {
+   max-width: 200px;
+   height: 200px;
+  
+}
+
+@keyframes slide-in-top {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.imgCardFlutuante {
+    top: 50%;
+    right: -15%;
+    z-index: -2;
+    transform: translate(-50%, -50%);
+
+}
+
+
+.btn-modal {
+    color:#fff;
+    cursor: pointer;
+    font-weight: 700;
+    transition: all 0.2s;
+    padding: 10px 20px;
+    border-radius: 100px;
+    background: #0f407a;
+    border: 1px solid transparent;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+  }
+  
+  .btn-modal:hover {
+    background: #fd7e14;
+  }
+  
+  .btn-modal > svg {
+    color:#fff;
+    width: 34px;
+    margin-left: 10px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .btn-modal:hover svg {
+    transform: translateX(5px);
+  }
+  
+  .btn-modal:active {
+    transform: scale(0.95);
+  }
+
+  #thumbnails-container {
+    flex-direction: column;
+}
+  
+
+@media screen and (min-width: 1520px) {
+    .vision-info-box .icon {
+        width: 100%;
+        height: 100%;
+
+    }
+
+}
+
+@media screen and (max-width: 1366px) {}
+
+@media screen and (max-width: 1200px) {
+    .accordion-saibamais {
+        font-size: 1rem !important;
+    }
+
+
+
+}
+
+@media screen and (max-width: 992px) {}
+
+@media screen and (max-width: 768px) {
+    .container-step {
+        flex-direction: column;
+    }
+
+    .vision-info-box {
+        flex-direction: column;
+        text-align: center;
+    }
+
+
+
+    .container-saibamais {
+        display: flex;
+    }
+
+    .buttonExplorar {
+        white-space: wrap;
+    }
+
+    .container-button {
+        flex-direction: column;
+        font-size: 1rem;
+    }
+
+    .accordion-saibamais {
+        padding: 15px;
+    }
+
+    .panel-saibamais {
+        padding: 0 15px;
+        flex-direction: column;
+    }
+
+    .video-container iframe {
+        width: 100%;
+        height: 100%;
+        border-radius: 0.3rem;
+    }
+
+    .socialContainer {
+        flex-direction: column;
+    }
+
+    .container-text-icons-socialContainer img {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 600px) {}
+
+@media screen and (max-width: 480px) {
+    .accordion-saibamais {
+        padding: 12px;
+    }
+
+    .panel-saibamais {
+        font-size: 1.5rem !important;
+        padding: 0 12px;
+    }
+
+    .container-livro-img-thumb-content {
+        overflow: hidden;
+        /* background-color: red; */
+        overflow: hidden;
+        height: 10rem;
+        border-radius: 0.1rem;
+    }
+
+    .container-livro-img-thumb {
+        flex-direction: column;
+    }
+
+    #thumbnails-container {
+        flex-direction: row;
+    }
+
+}
+
+@media screen and (max-width: 320px) {}
+
+
+/* Quando Estiver na Resolução 1042 * 389 */

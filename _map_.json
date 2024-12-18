@@ -1,0 +1,14 @@
+{
+    "_animacoes":{
+        "_recursivo_vizualizacao":false,
+        "_map":[
+            "._piscar => [ animate__animated animate__flash animate__slow animate__delay-1s ] ",
+            "._desaparecer => [ animate__animated animate__fadeIn animate__slow animate__delay-1s  ] ",
+
+            
+            "._sugirEsquerdaAndando_1 => [ animate__animated animate__fadeInLeft animate__slow animate__delay-1s  ] ",
+            "._sugirEsquerdaAndando_2 => [ animate__animated animate__fadeInLeft animate__slow animate__delay-2s  ] ",
+            "._sugirEsquerdaAndando_3 => [ animate__animated animate__fadeInLeft animate__slow animate__delay-3s  ] "
+        ] 
+    }
+}
